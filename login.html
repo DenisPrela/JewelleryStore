@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_Login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="sidebar">
+                <button>
+                    <img src="images/menubar.png">
+                </button>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Search...">
+                <button id="search"><img src="images/search.png"></button>
+            </div>
+            <div class="logo">
+                <p>Eternal Gold</p>
+            </div>
+            <div class="register">
+                <div class="login">
+                    <button>
+                        <a href="login.html">
+                            Log In
+                        </a>
+                    </button>
+                </div>
+                <div class="signup">
+                    <button>
+                        <a href="signup.html">
+                            Sign Up
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Logintext">
+            <h1>Login</h1>
+            <a href="index.html">Homepage</a>
+        </div>
+        <div class="loginbox">
+            <div class="vrflexbox">
+                <form action="/login" method="post">
+                    <label for="Email">*Email</label>
+                    <input type="email" id="Email" name="email" placeholder="Enter your email" required>
+                    <label for="password">*Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    
+                    
+                </form>
+                <div class="hrflexbox">
+                    <label>
+                        <input type="checkbox" name="agree" value="yes">
+                        Remember me
+                      </label>
+                      <a href="#">forgot password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="signup.html" class="register-link">Register here</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    </body>
+    </html>
+    

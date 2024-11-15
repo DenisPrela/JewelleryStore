@@ -1,0 +1,83 @@
+.Logintext{
+    text-align: center;
+}
+.Logintext h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-size: 3.3rem;
+}
+.loginbox {
+    width: 100%;
+    max-width: 500px; 
+    background-color: #f2f2f2; 
+    padding: 50px;
+    margin: 50px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.vrflexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+
+.loginbox label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.loginbox label, p, a{
+    font-size: 16px;
+    color: #121212;
+}
+.loginbox input[type="email"],
+.loginbox input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+.loginbox .hrflexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.loginbox button {
+    background-color: #25303a;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.loginbox button:hover {
+    background-color: #000d1a;
+    
+}
+
+
+.loginbox a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+.loginbox a:hover {
+    text-decoration: underline;
+}
+
+
+.loginbox p {
+    font-size: 14px;
+    text-align: center;
+}
