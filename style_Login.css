@@ -28,7 +28,15 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
-.loginbox label, p, a{
+.loginbox label{
+    font-size: 16px;
+    color: #121212;
+}
+.loginbox p{
+    font-size: 16px;
+    color: #121212;
+}
+.loginbox a{
     font-size: 16px;
     color: #121212;
 }
