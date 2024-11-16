@@ -186,3 +186,61 @@ button:hover {
     background-color: white;
 
 }
+
+#quote {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popular {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    background: gray;
+    margin-top: 0;
+}
+
+.popular-product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 300px;
+    border-style: groove;
+    border-radius: 1px;
+}
+
+.popular-image {
+    margin: 5px;
+
+    height: 70%;
+}
+
+.popular-image img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.popular-text {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+#popular-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    font-size: 25px;
+    height: 40px;
+}
