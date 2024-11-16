@@ -48,8 +48,13 @@
                 <h1>Eternal Gold</h1>
             </div>
         </div>
+        <div id="category">
+            <p>Shop By Category</p>
+        </div>
         <div class="products">
+
             <div class="product-buttons">
+
                 <div class="prod-buttons">
                     <button onmouseover="changeImage('images/diamondnecklace.jpeg')">Necklace</button>
                     <button onmouseover="changeImage('images/ring.jpeg')">Ring</button>
@@ -63,17 +68,29 @@
                     <button onmouseover="changeImage('image8.jpg')">product</button>
                 </div>
             </div>
-            <div id="product-image">
-                <img id="product" src="images/diamondnecklace.jpeg">
+            <div class="product-image">
+                <img id="product" src="images/diamondnecklace.jpeg" alt="Product Image">
             </div>
         </div>
         <script>
             function changeImage(imageSrc) {
-                document.getElementById('product').src = imageSrc;
+                const productImage = document.getElementById('product');
+                // Fade out
+                productImage.style.opacity = 0;
 
+                // Wait for the fade-out transition to complete, then change the image
+                setTimeout(() => {
+                    productImage.src = imageSrc;
+
+                    // Fade back in
+                    productImage.style.opacity = 1;
+                }, 500); // Matches the CSS transition duration
             }
 
         </script>
+        <div>
+
+        </div>
     </main>
 
 
