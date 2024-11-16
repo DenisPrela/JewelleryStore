@@ -75,16 +75,14 @@
         <script>
             function changeImage(imageSrc) {
                 const productImage = document.getElementById('product');
-                // Fade out
+
                 productImage.style.opacity = 0;
 
-                // Wait for the fade-out transition to complete, then change the image
                 setTimeout(() => {
                     productImage.src = imageSrc;
 
-                    // Fade back in
                     productImage.style.opacity = 1;
-                }, 500); // Matches the CSS transition duration
+                }, 500);
             }
 
         </script>
@@ -122,11 +120,36 @@
                 </div>
             </div>
         </div>
+        <div id="slider">
+            <div class="slides">
+                <div class="slide">
+                    <div class="slide-image"><img src="images/image1.jpg" alt="Slide 1"></div>
+                    <div class="text">slide 1 text</div>
+                </div>
+                <div class="slide">
+                    <div class="slide-image"><img src="images/image2.jpg" alt="Slide 2"></div>
+                    <div class="text">slide 2 text</div>
+                </div>
+                <div class="slide">
+                    <div class="slide-image"><img src="images/image3.jpg" alt="Slide 3"></div>
+                    <div class="text">slide 3 text</div>
+                </div>
+            </div>
+            <div class="prev-next">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <script src="slider.js"></script>
     </main>
 
 
     <footer>
-
+        <div id="footer">
+            <div id="contacts">
+                <p>dawg</p>
+            </div>
+        </div>
     </footer>
 </body>
 
