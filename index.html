@@ -56,27 +56,27 @@
             <div class="product-buttons">
 
                 <div class="prod-buttons">
-                    <button onmouseover="changeImage('images/diamondnecklace.jpeg')">Necklace</button>
-                    <button onmouseover="changeImage('images/ring.jpeg')">Ring</button>
-                    <button onmouseover="changeImage('images/bracelet.jpeg')">Bracelet</button>
-                    <button onmouseover="changeImage('image4.jpg')">Earrings</button>
+                    <button onmouseover="changeImage('images/necklace.jpg')">Necklace</button>
+                    <button onmouseover="changeImage('images/ring.jpg')">Ring</button>
+                    <button onmouseover="changeImage('images/bracelets.jpg')">Bracelet</button>
+                    <button onmouseover="changeImage('images/earrings.jpg')">Earrings</button>
                 </div>
                 <div class="prod-buttons">
-                    <button onmouseover="changeImage('image5.jpg')">product</button>
-                    <button onmouseover="changeImage('image6.jpg')">product</button>
-                    <button onmouseover="changeImage('image7.jpg')">product</button>
-                    <button onmouseover="changeImage('image8.jpg')">product</button>
+                    <button onmouseover="changeImage('images/diamond.jpg')">Diamond</button>
+                    <button onmouseover="changeImage('images/gold.webp')">Gold</button>
+                    <button onmouseover="changeImage('images/silver.jpg')">Silver</button>
+                    <button onmouseover="changeImage('images/gemstone.webp')">Gemstone</button>
                 </div>
             </div>
             <div class="product-image">
-                <img id="product" src="images/diamondnecklace.jpeg" alt="Product Image">
+                <img id="product" src="images/necklace.jpg" alt="Product Image">
             </div>
         </div>
         <script>
             function changeImage(imageSrc) {
                 const productImage = document.getElementById('product');
 
-                productImage.style.opacity = 0;
+                productImage.style.opacity = 0.5;
 
                 setTimeout(() => {
                     productImage.src = imageSrc;
@@ -142,6 +142,9 @@
         </div>
         <script src="slider.js"></script>
         <div id="brands">
+            <div id="brand-message">
+                <p>Famous Brands</p>
+            </div>
             <div class="brand-type1">
                 <div class="brand-image1">
                     <img src="images/pandora.jpg" alt="">
