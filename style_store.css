@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  /* Main Content */
+  .main-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 60px); /* Adjust height excluding header */
+  }
+  
+ /* Scroll Section */
+.image-scroll-section {
+    position: relative;
+    padding: 20px 0;
+    overflow-x: hidden; /* Ensure overflow is hidden for the main container */
+    transform: scale(0.8);
+  }
+  
+  .image-scroll-container {
+    display: flex;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    gap: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    scroll-snap-type: x mandatory; /* Ensures smooth scroll effect */
+    max-width: 100%; /* Ensure it takes up full width of the parent */
+  }
+  
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image {
+    width: 300px; /* Ensures images are all the same width */
+    height: 300px; /* Ensures images are uniform in size */
+    object-fit: cover; /* Ensures images fill their container without stretching */
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+  }
+  
+  .image:hover {
+    transform: scale(1.03); /* Zoom in when hovering */
+  }
+  
+  .image-caption {
+    margin-top: 10px;
+    font-size: 14px; 
+    color: #333;
+  }
+  
+  /* Scroll Buttons */
+  .scroll-left,
+  .scroll-right {
+    position: absolute;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 12px;  /* Reduced padding */
+    font-size: 14px; 
+  }
+  
+  .scroll-left {
+    left: 10px;
+  }
+  
+  .scroll-right {
+    right: 10px;
+  }
+  
+  .scroll-left:hover,
+  .scroll-right:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
