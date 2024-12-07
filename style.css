@@ -1,14 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgray;
+    background-color: white;
 }
 
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: space-between;
     margin-top: 0;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.85);
@@ -17,10 +17,7 @@ body {
 .sidebar {
     background-color: rgba(255, 255, 255, 0);
     justify-content: baseline;
-
     align-items: center;
-    width: 5%;
-
 }
 
 .sidebar button {
@@ -29,6 +26,7 @@ body {
     height: auto;
     border: none;
     padding: auto;
+    padding-right: 10px;
 }
 
 .sidebar img {
@@ -42,9 +40,10 @@ body {
     padding-left: 5px;
     display: flex;
     justify-content: baseline;
-    width: 20%;
+
     border-radius: 20px;
     background-color: white;
+
     margin-right: auto;
 }
 
@@ -76,17 +75,24 @@ button:hover {
 }
 
 .logo {
-    width: 20%;
+    padding-right: 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-left: 0;
     color: gold;
     margin-right: auto;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80xp;
 }
 
 .register {
     display: flex;
-    width: 30%;
+
     justify-content: end;
     padding-right: 15px;
 
@@ -109,18 +115,24 @@ button:hover {
 
 
 .top {
-    background-image: url(images/randomtopimage.jpg);
+    background-image: url(images/topimage.jpg);
     width: 100%;
-    height: 30vh;
-    background-size: 100% 30vh;
+    height: 50vh;
+    background-size: 100% 50vh;
 
     background-repeat: no-repeat;
     margin-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: flex-end;
+
     filter: drop-shadow(0px 1px 5px black);
     background-color: navy;
+}
+
+.top img {
+    width: 150px;
+    height: 150px;
 }
 
 .company-name {
@@ -130,28 +142,34 @@ button:hover {
 
 }
 
+
 .products {
     display: flex;
 
-    align-items: center;
-    background-color: lightgray;
+    align-items: end;
+    background-color: white;
     width: 100%;
-    height: 60vh;
+    height: 40vh;
 
 }
 
 .product-buttons {
     display: flex;
     justify-self: baseline;
-    align-items: center;
+    height: 100%;
     width: 50%;
     padding-left: 15%;
-    padding-bottom: 7%;
+
     padding-right: 10px;
 }
 
+.product-buttons button:hover {
+    transform: scale(1.0125);
+
+}
+
 #category {
-    background-color: lightgray;
+
     display: flex;
     justify-content: baseline;
     padding-left: 15%;
@@ -164,42 +182,52 @@ button:hover {
     display: flex;
     align-items: center;
     justify-self: end;
-    width: 50%;
-    padding-right: 20%;
-    padding-bottom: 7%;
+    width: 60%;
+    margin-right: 20%;
+    height: 100%;
+
 
 }
+
 
 .prod-buttons {
     display: flex;
     flex-direction: column;
+    height: 100%;
+
 }
 
 .prod-buttons button {
     width: 200px;
-    height: 77px;
+    height: 25%;
     border: none;
 
     margin: 2px;
 }
 
 .product-image img {
-    width: 500px;
-    height: 320px;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 0.1s ease-in;
     background-color: white;
 
 }
 
 #quote {
+    margin-top: 25px;
     width: 100%;
-    height: 20%;
+
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: darkgray;
+    margin-bottom: 0;
+}
+
+#quote p {
+    padding-top: 20;
 }
 
 #popular {
@@ -208,7 +236,7 @@ button:hover {
     justify-content: space-around;
     align-items: center;
     height: 50vh;
-    background: lightgray;
+    background: white;
     margin-top: 0;
 }
 
@@ -218,9 +246,9 @@ button:hover {
     flex-direction: column;
     width: 25%;
     height: 300px;
-    border-style: groove;
+
     border-radius: 1px;
-    background-color: darkgray;
+    background-color: white;
 }
 
 .popular-image {
@@ -244,12 +272,14 @@ button:hover {
 
 #popular-message {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: lightgray;
+    justify-content: baseline;
     text-align: center;
-    font-size: 25px;
-    height: 40px;
+    align-items: center;
+    font-size: 40px;
+    height: 50px;
+    margin-top: 0;
+    margin-left: 5%;
+
 }
 
 .prev-next {
@@ -281,12 +311,13 @@ button:hover {
 #slider {
     position: relative;
     width: 90%;
-    height: 70vh;
+    height: 60vh;
     margin-left: 5%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background-color: lightgray;
+    margin-bottom: 5%;
 }
 
 .slides {
@@ -330,6 +361,7 @@ button:hover {
 
     flex-direction: column;
     object-fit: contain;
+    margin-bottom: 5%;
 }
 
 .brand-type1 {
@@ -339,8 +371,8 @@ button:hover {
     justify-self: baseline;
     align-items: center;
     width: 100%;
-    height: 40vh;
-    background-color: lightgray;
+    height: 30vh;
+    background-color: white;
 
 }
 
@@ -351,24 +383,24 @@ button:hover {
     justify-self: end;
     align-items: center;
     width: 100%;
-    height: 40vh;
-    background-color: lightgray;
+    height: 30vh;
+    background-color: white;
 
 }
 
 .brand-image1 {
     position: relative;
-    height: 80%;
+    height: 100%;
     width: 30%;
-    margin-left: 10%;
+    margin-left: 5%;
 
 }
 
 .brand-image2 {
     position: relative;
-    height: 80%;
+    height: 100%;
     width: 30%;
-    margin-right: 10%;
+    margin-right: 5%;
 
 }
 
@@ -430,9 +462,10 @@ button:hover {
 
 #brand-message {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
+    margin-left: 5%;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 
@@ -442,7 +475,72 @@ button:hover {
 
 
 #footer {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: rgba(0, 0, 0, 0.85);
+}
+
+#footer-logo {
+    width: 25%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#footer-logo img {
+    width: 140px;
+    height: 140px;
+    padding-left: 5%;
+}
+
+#contacts {
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+
+#contacts .contact-p {
+    margin: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+#contacts h2 {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#copyright {
+    font-size: 10px;
+    color: rgba(255, 255, 255, .2);
+}
+
+#social-medias {
+    width: 25%;
+    display: flex;
+    padding-top: 2%;
+    flex-direction: column;
+
+
+}
+
+#social-medias img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+    padding-left: 60%;
+
+}
+
+hr {
+    width: 85%;
+
+}
+
+#at-quote {
+
+    width: 60%;
 }
