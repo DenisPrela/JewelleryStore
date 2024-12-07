@@ -85,6 +85,7 @@
     background-color: #0056b3;
   }
   hr {
+    width: 100% !important;
     border: none;
     height: 1px;
     background: #b0b0b0;
