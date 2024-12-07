@@ -1,14 +1,14 @@
 document.querySelector('.scroll-left').addEventListener('click', function() {
     document.querySelector('.image-scroll-container').scrollBy({
-      left: -300, // Scroll 300px to the left
-      behavior: 'smooth' // Smooth scrolling
+      left: -300, 
+      behavior: 'smooth' 
     });
   });
   
   document.querySelector('.scroll-right').addEventListener('click', function() {
     document.querySelector('.image-scroll-container').scrollBy({
-      left: 300, // Scroll 300px to the right
-      behavior: 'smooth' // Smooth scrolling
+      left: 300, 
+      behavior: 'smooth' 
     });
   });
   

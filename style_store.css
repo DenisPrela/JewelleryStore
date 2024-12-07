@@ -1,37 +1,25 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-
-  
-  /* Main Content */
-  .main-content {
-    padding: 20px;
-    background-color: #f4f4f4;
-    min-height: calc(100vh - 60px); /* Adjust height excluding header */
-  }
-  
- /* Scroll Section */
+.image-scroll-text{
+   text-align: center;
+   padding-top: 50px;
+}
 .image-scroll-section {
     position: relative;
     padding: 20px 0;
-    overflow-x: hidden; /* Ensure overflow is hidden for the main container */
+    overflow-x: hidden; 
     transform: scale(0.8);
   }
   
   .image-scroll-container {
     display: flex;
-    overflow-x: scroll; /* Allow horizontal scrolling */
+    overflow-x: scroll; 
     gap: 5px;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    scroll-snap-type: x mandatory; /* Ensures smooth scroll effect */
-    max-width: 100%; /* Ensure it takes up full width of the parent */
+    scroll-snap-type: x mandatory; 
+    max-width: 100%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);;
   }
   
   .image-item {
@@ -40,27 +28,36 @@
     align-items: center;
     text-align: center;
   }
-  
+  .image-item p{
+    font-size: large;
+    transition: 0.3s;
+  }
+  .image-item a{
+    text-decoration: none;
+  }
+  .image-item:hover p{
+   color: goldenrod;
+  }
   .image {
-    width: 300px; /* Ensures images are all the same width */
-    height: 300px; /* Ensures images are uniform in size */
-    object-fit: cover; /* Ensures images fill their container without stretching */
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 4px;
     flex-shrink: 0;
-    transition: transform 0.3s ease; /* Smooth zoom transition */
+    transition: transform 0.3s ease; 
   }
   
   .image:hover {
-    transform: scale(1.03); /* Zoom in when hovering */
+    transform: scale(1.03); 
   }
   
   .image-caption {
     margin-top: 10px;
     font-size: 14px; 
-    color: #333;
+    color: #121212;
   }
   
-  /* Scroll Buttons */
+  
   .scroll-left,
   .scroll-right {
     position: absolute;
@@ -71,7 +68,7 @@
     border-radius: 5px;
     top: 50%;
     transform: translateY(-50%);
-    padding: 8px 12px;  /* Reduced padding */
+    padding: 8px 12px;  
     font-size: 14px; 
   }
   
@@ -87,6 +84,105 @@
   .scroll-right:hover {
     background-color: #0056b3;
   }
+  hr {
+    border: none;
+    height: 1px;
+    background: #b0b0b0;
+   
+  }
+  .search-filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; /* Adjust the width as needed */
+  }
+  
+  .filter-dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    width: 150px; /* Adjust the width as needed */
+  }
   
   
+  /* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+  }
+  
+  /* Grid Item */
+  .grid-item {
+    display: flex;
+    flex-direction: column; /* Stack image on top of text */
+    text-align: center; /* Center align the text */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Image */
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Item Details */
+  .item-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Description Styling */
+  .item-description {
+    font-size: 14px;
+    color: #333;
+    line-height: 160%;
+    
+  }
+  
+  /* Pricing Styling */
+  .item-pricing {
+    font-size: 14px;
+    color: #666;
+  }
+  .item-pricing p {
+    display: inline-block;
+    margin-right: 10px; /* Space between the elements */
+  }
+  
+  .item-price {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .price-reduced {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+    color: #5555556d;
+  }
+  
+  .save-percentage {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: #000000;
+  }
   
