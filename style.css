@@ -75,7 +75,8 @@ button:hover {
 }
 
 .logo {
-    padding-right: 10%;
+    left: 47.5%;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +89,30 @@ button:hover {
 .logo img {
     width: 80px;
     height: 80xp;
+}
+
+.about-contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    margin-right: 10px;
+    width: max-content;
+
+
+}
+
+.about-contact a {
+    text-decoration: none;
+}
+
+.about-contact button {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
 }
 
 .register {
@@ -198,11 +223,21 @@ button:hover {
 }
 
 .prod-buttons button {
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    margin: 2px;
+}
+
+.prod-buttons a {
+
     width: 200px;
     height: 25%;
     border: none;
 
     margin: 2px;
+
 }
 
 .product-image img {
@@ -255,12 +290,13 @@ button:hover {
     margin: 5px;
 
     height: 70%;
+    border-radius: 30px;
 }
 
 .popular-image img {
     width: 100%;
     height: 100%;
-
+    border-radius: 30px;
 
 }
 
@@ -268,6 +304,7 @@ button:hover {
     width: 100%;
     display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 #popular-message {
@@ -330,6 +367,8 @@ button:hover {
     min-width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .slide-image {
@@ -347,12 +386,13 @@ button:hover {
 .slide .text {
     position: absolute;
     top: 50vh;
-    left: 45%;
+    justify-self: center;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.2em;
+    text-align: center;
 }
 
 #brands {
@@ -374,6 +414,7 @@ button:hover {
     height: 30vh;
     background-color: white;
 
+
 }
 
 .brand-type2 {
@@ -385,6 +426,8 @@ button:hover {
     width: 100%;
     height: 30vh;
     background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
@@ -393,7 +436,7 @@ button:hover {
     height: 100%;
     width: 30%;
     margin-left: 5%;
-
+    box-shadow: -5px 0px 10px 5px darkgray;
 }
 
 .brand-image2 {
@@ -401,7 +444,7 @@ button:hover {
     height: 100%;
     width: 30%;
     margin-right: 5%;
-
+    box-shadow: 5px 0px 10px 5px darkgray;
 }
 
 .brand-image1 img {
@@ -478,8 +521,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 150px;
+    height: 160px;
     background-color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 0;
+    position: relative;
+
 }
 
 #footer-logo {
